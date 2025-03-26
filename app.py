@@ -19,10 +19,10 @@ def init_db():
     
 init_db()
 
-@app.route("/home_msg")
+@app.route("/")
 def home_msg():
     
-    return "<h3>Olá! Essa aqui é a rota /home_msg </h3>"
+    return "<h3>Olá! Essa aqui é a rota errada. Você precisa entrar pela endpoint /livros </h3>"
 
 
 @app.route("/doar", methods =["POST"])
